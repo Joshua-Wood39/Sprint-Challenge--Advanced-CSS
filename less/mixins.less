@@ -3,3 +3,21 @@
 .testBox (@boxColor) {
     border: 1px solid @boxColor;
 }
+
+.custom-layout (@display, @justify, @align) {
+    display: @display;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.custom-button (@fontS, @btncolor, @btncolor-bg) {
+    font-size: @fontS;
+    color: @btncolor;
+    background-color: @btncolor-bg;
+}
+
+.button-shape (@padTB, @padLR, @b-radius, @cursor) {
+    padding: @padTB @padLR;
+    border-radius: @b-radius;
+    cursor:@cursor;
+}

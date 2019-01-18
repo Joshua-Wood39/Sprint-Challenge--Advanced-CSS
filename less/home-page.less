@@ -58,6 +58,16 @@
       }
 
       .btn {
+        width: 95px;
+        font-weight: bold;
+        text-align: center;
+        .custom-button (1.6rem , @porcelain, @btn-bg-color);
+        .button-shape(8px, 14px, 5px, pointer);
+      }
+
+      .btn:hover {
+        color: @btn-bg-color;
+        background-color: @porcelain;
       }
     }
 

@@ -5,9 +5,9 @@
     width: 100%;
     margin: 0 auto;
 
-    display: flex;
+    .custom-layout(flex, 0, center);   
     flex-direction: column;
-    align-items: center;
+    
     //.testBox(red);
 
     h1 {
@@ -15,20 +15,22 @@
     }
 
     nav {
-        display: flex;
-        justify-content: space-around;
+        .custom-layout(flex, space-around, 0);
         width: 46%;
         margin: 10px 0;
+        background-color: @nav-bg;
         //.testBox(blue);
     }
 
     a {
-        color: black;
+        color: @nav-font;
         text-decoration: none;
         text-align: center;
         font-size: 1.4rem;
 
         //.testBox(green);
     }
+
+    
 
 }
