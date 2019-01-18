@@ -1,3 +1,20 @@
+@keyframes morph {
+  0% {
+    color: black;
+  }
+  25% {
+    color: hotpink;
+  }
+  50% {
+    color: #918611;
+  }
+  75% {
+    color: #2929d3;
+  }
+  100% {
+    color: black;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +191,9 @@ p {
 }
 .topNav h1 {
   margin: 10px 0;
+  animation-name: morph;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .topNav nav {
   display: flex;
