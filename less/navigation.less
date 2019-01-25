@@ -1,1 +1,43 @@
 // Navigation code here
+
+.topNav {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    .custom-layout(flex, 0, center);   
+    flex-direction: column;
+    
+    //.testBox(red);
+
+    h1 {
+        margin: 10px 0;
+        animation-name: morph;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    nav {
+        .custom-layout(flex, space-around, 0);
+        width: 46%;
+        margin: 10px 0;
+        background-color: @nav-bg;
+        //.testBox(blue);
+
+        @media (@phone) {
+            width: 75%;
+        }
+    }
+
+    a {
+        color: @nav-font;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.4rem;
+
+        //.testBox(green);
+    }
+
+    
+
+}
